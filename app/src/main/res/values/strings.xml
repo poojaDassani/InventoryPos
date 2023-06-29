@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">InventoryPos</string>
+    <string name="title_activity_inventory">Inventory</string>
 </resources>
