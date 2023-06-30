@@ -14,9 +14,9 @@
         android:theme="@style/Theme.InventoryPos"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.theme.MainActivity"
             android:exported="false"
-            android:label="@string/title_activity_inventory"
+            android:label="@string/title_activity_main"
             android:theme="@style/Theme.InventoryPos" />
         <activity
             android:name=".Inventory"
