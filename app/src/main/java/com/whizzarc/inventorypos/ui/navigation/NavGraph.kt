@@ -5,7 +5,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import androidx.navigation.compose.navArgument
+import androidx.navigation.navArgument
 import com.example.simplenavigationcompose.ui.screens.HomeScreen
 import com.whizzarc.inventorypos.ui.screens.LoginScreen
 import com.whizzarc.inventorypos.ui.screens.CustomerModule

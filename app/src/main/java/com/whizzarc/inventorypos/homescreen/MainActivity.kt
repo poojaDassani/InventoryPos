@@ -1,4 +1,4 @@
-package com.whizzarc.inventorypos
+package com.whizzarc.inventorypos.homescreen
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
