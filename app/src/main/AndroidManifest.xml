@@ -4,7 +4,8 @@
     package="com.whizzarc.inventorypos">
 
     <application
-        android:allowBackup="true"
+        android:name="com.whizzarc.inventorypos.splashscreen.HiltApplication"
+        android:allowBackup="false"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
@@ -14,13 +15,25 @@
         android:theme="@style/Theme.InventoryPos"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".splashscreen.SplashScreen"
+            android:exported="true"
+            android:label="@string/title_activity_splash_screen"
+            android:theme="@style/Theme.InventoryPos" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name=".homescreen.MainActivity"
+            android:exported="false"
+            android:label="@string/title_activity_main"
+            android:theme="@style/Theme.InventoryPos" />
+        <activity
+            android:name=".loginscreen.Inventory"
+            android:exported="false">
+
         </activity>
     </application>
 
