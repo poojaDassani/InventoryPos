@@ -26,15 +26,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".homescreen.MainActivity"
+            android:name=".homescreen.HomeScreen"
             android:exported="false"
             android:label="@string/title_activity_main"
             android:theme="@style/Theme.InventoryPos" />
-        <activity
-            android:name=".loginscreen.Inventory"
-            android:exported="false">
 
-        </activity>
     </application>
 
 </manifest>

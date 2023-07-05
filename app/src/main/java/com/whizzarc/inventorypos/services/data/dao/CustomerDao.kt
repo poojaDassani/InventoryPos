@@ -9,7 +9,7 @@ import com.whizzarc.inventorypos.services.data.models.Customer
 @Dao
 interface CustomerDao {
     @Insert
-    suspend fun insertCustomer(customer: Customer)
+    suspend fun insertCustomer(customer: Customer):Long
 
     @Update
     suspend fun updateCustomer(customer: Customer)
@@ -22,4 +22,6 @@ interface CustomerDao {
 
     @Query("DELETE FROM CUSTOMER WHERE phoneNumber = :customerId")
     suspend fun deleteCustomerById(customerId: Int)
+    @Query("DELETE FROM CUSTOMER")
+    suspend fun deleteAll()
 }

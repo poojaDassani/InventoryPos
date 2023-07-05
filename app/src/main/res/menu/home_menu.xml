@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group
+        android:id="@+id/grp_1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/CustomerFragment"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Customers" />
+    </group>
+
+    <group
+        android:id="@+id/grp_2"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/ProductMasterFragment"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Product master"/>
+
+    </group>
+
+
+
+</menu>

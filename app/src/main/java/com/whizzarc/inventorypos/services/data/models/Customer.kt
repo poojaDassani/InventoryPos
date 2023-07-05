@@ -7,7 +7,7 @@ import java.util.Date
 @Entity(tableName = "Customer")
 data class Customer(
     @PrimaryKey
-    val phoneNumber: Int,
+    var phoneNumber: Long,
     val firstName: String,
     val lastName: String?,
     val address: String?,

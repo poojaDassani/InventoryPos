@@ -24,26 +24,20 @@ class SplashScreen : AppCompatActivity() {
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivitySplashScreenBinding
 
-    @Inject
-    lateinit var customerDao : CustomerDao
-
     override fun onCreate(savedInstanceState: Bundle?) {
         WindowCompat.setDecorFitsSystemWindows(window, false)
         super.onCreate(savedInstanceState)
         binding = ActivitySplashScreenBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        lifecycleScope.launch {
-            val customers = customerDao.getAllCustomers()
-        }
-        val navController = findNavController(R.id.nav_host_fragment_content_splash_screen)
-        appBarConfiguration = AppBarConfiguration(navController.graph)
-        setupActionBarWithNavController(navController, appBarConfiguration)
 
-        binding.fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAnchorView(R.id.fab)
-                .setAction("Action", null).show()
-        }
+        val navController = findNavController(R.id.nav_host_fragment_content_splash_screen)
+        val appBarConfiguration = AppBarConfiguration
+            .Builder(
+                R.id.HomeFragment,
+                R.id.LoginFragment
+            )
+            .build()
+        setupActionBarWithNavController(navController, appBarConfiguration)
     }
 
     override fun onSupportNavigateUp(): Boolean {
